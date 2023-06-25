@@ -113,7 +113,7 @@ combos {
         &kp TAB       &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
         &mt LCTRL ESC &trans &trans &trans &trans &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LA(LG(LEFT)) &kp LA(LG(RIGHT))
         &kp LSHFT     &trans &trans &trans &trans &trans   &kp LG(LBKT)     &kp LG(RBKT)   &trans &trans    &trans &trans
-                               &kp LGUI &trans &kp SPACE   &kp RET  &trans   &kp RALT
+                               &kp LGUI &trans &kp SPACE   &kp RET  &trans   &kp LGUI
       >;
     };
 
@@ -132,7 +132,7 @@ combos {
         };
          adjust_layer {
             bindings = <
-                &trans     &bt BT_CLR &trans     &trans     &trans     &bootloader                      &bootloader &trans     &trans     &trans     &trans     &trans
+                &trans     &bt BT_CLR &trans     &trans     &sys_reset &bootloader                      &bootloader &sys_reset &trans     &trans     &trans     &trans
                 &trans     &bt BT0    &bt BT1    &bt BT2    &bt BT3    &bt BT4                          &trans      &trans     &trans     &trans     &trans     &trans
                 &trans     &trans     &trans     &trans     &trans     &trans                           &tog LOCK   &trans     &trans     &trans     &trans     &trans
                                                             &trans     &trans     &trans     &kp RET    &trans      &trans
